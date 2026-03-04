@@ -1,6 +1,5 @@
 **Infrastructure as Code: Website Deployment using Terraform**
 **📌 Project Title**
-
 Host a Website using Terraform (AWS EC2 + Apache + GitHub)
 
 **🎯 Project Objective**
@@ -35,6 +34,7 @@ terraform-website/
 ├── outputs.tf
 ├── terraform.tfstate
 └── .terraform/
+
 🔹 Step 1: Prepare Website Repository
 
 Upload a static website to GitHub.
@@ -42,6 +42,7 @@ Upload a static website to GitHub.
 Example:
 
 https://github.com/Muralidharan786/Website-Deployment-using-Terraform.git
+
 **🔹 Step 2: Install Terraform**
 Windows
 choco install terraform
@@ -91,6 +92,7 @@ Output format (json)
 provider "aws" {
   region = "ap-south-1"
 }
+
 **🔹 Step 7: Create EC2 Instance (main.tf)**
 resource "aws_instance" "web" {
   ami           = "ami-08d59269edddde222"
@@ -105,7 +107,6 @@ resource "aws_instance" "web" {
               apt install apache2 git -y
               systemctl start apache2
               systemctl enable apache2
-
               rm -rf /var/www/html/*
               git clone https://github.com/Muralidharan786/Website-Deployment-using-Terraform.git /var/www/html/
               EOF
@@ -169,6 +170,7 @@ Your website will be live 🎉
 
 🔎 View Infrastructure Details
 terraform show
+
 **💰 Step 13: Destroy Infrastructure (Cost Saving)**
 
 Always destroy resources after use:
@@ -178,7 +180,8 @@ terraform destroy
 Type:
 
 yes
-🎓 Learning Outcomes
+
+**🎓 Learning Outcomes**
 
 After completing this project, you will understand:
 
