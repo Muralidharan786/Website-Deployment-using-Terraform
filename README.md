@@ -30,7 +30,7 @@ AWS CLI	Authentication
 Terraform → AWS EC2 → Apache → GitHub Website → Public URL**
 
 **📂 Project Structure**
-
+Create a folder called Terraform-website and inside that create the 3 files - provider, main, outputs files.
 terraform-website/
 │
 ├── provider.tf
