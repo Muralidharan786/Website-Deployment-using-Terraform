@@ -24,9 +24,13 @@ Apache	Web Server
 GitHub	Website Source Code
 Ubuntu	Operating System
 AWS CLI	Authentication
+
 **🏗 Architecture
+
 Terraform → AWS EC2 → Apache → GitHub Website → Public URL**
+
 **📂 Project Structure**
+
 terraform-website/
 │
 ├── provider.tf
